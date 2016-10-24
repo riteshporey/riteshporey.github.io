@@ -184,13 +184,6 @@
     </section>
 
     <!-- Contact Section -->
-<form action="https://getsimpleform.com/messages?form_api_token=7694a7735860a0b9aad4b3a3bb2740dc" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='https://riteshporey.github.io'/>
-  <!-- all your input fields here.... -->
-  <input type='text' name='test' />
-  <input type='submit' value='Test form' />
-</form>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -203,7 +196,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <!--<form name="sentMessage" id="contactForm" novalidate>-->
+                    <form action="https://getsimpleform.com/messages?form_api_token=7694a7735860a0b9aad4b3a3bb2740dc" method="post">
+                    <input type='hidden' name='redirect_to' value='https://riteshporey.github.io'/>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -236,7 +231,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg" value='Test form' >Send</button>
                             </div>
                         </div>
                     </form>
