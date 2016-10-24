@@ -184,18 +184,12 @@
     </section>
 
     <!-- Contact Section -->
-<script>
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'rrporey' + '@' + 'ncsu' + '.' + 'edu');
-</script>
-
-<form id="contactform" method="POST">
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="_replyto" placeholder="Your email">
-    <input type="hidden" name="_subject" value="Website contact" />
-    <textarea name="message" placeholder="Your message"></textarea>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
+<form action="https://getsimpleform.com/messages?form_api_token=7694a7735860a0b9aad4b3a3bb2740dc" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='https://riteshporey.github.io'/>
+  <!-- all your input fields here.... -->
+  <input type='text' name='test' />
+  <input type='submit' value='Test form' />
 </form>
     <section id="contact">
         <div class="container">
