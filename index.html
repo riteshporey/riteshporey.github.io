@@ -21,6 +21,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -125,7 +126,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <img src="img/projects/django-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -135,7 +136,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/projects/github-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -145,7 +146,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="img/projects/python-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -155,7 +156,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <img src="img/projects/java-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -165,7 +166,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                        <img src="img/projects/oracle-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -175,7 +176,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <img src="img/projects/html5-original.svg" class="img-responsive" alt="" height="300" width="300">
                     </a>
                 </div>
             </div>
@@ -305,9 +306,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>nMASE(Network Monitoring and Search Engine):</h2>
+                            <h2>nMASE(Network Monitoring and Search Engine)</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <!--<img src="img/projects/django-original.svg" class="img-responsive img-centered" alt="" height="300" width="300">-->
                             <p>Introduced concept of network search engine and ranking of network traffic. nMASE is built upon Boolean model of Information Retrieval and is capable of finding relevant content from a huge network trace based on simple natural language queries. This leads to significant reduction in the time that network administrators spend in scanning through colossal network activity. Captured packets using PF_ring library in C. Processed packets and extracted metadata using regex library in Python. Used Python Django framework for the Web development.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
@@ -338,17 +339,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>A Simple FTP Server using UDP and Go-Back-N:</h2>
+                            <h2>CRABOT - Code Review Assist Bot</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Implemented a FTP server in Python but with using the UDP Protocol. The UDP communication with the server is made reliable with the implementation of Go-Back-N sliding window protocol.</p>
+                            <!--<img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">-->
+                            <!--<p>Implemented a FTP server in Python but with using the UDP Protocol. The UDP communication with the server is made reliable with the implementation of Go-Back-N sliding window protocol.</p>-->
+                            <p>Crabot takes code submitted for PR (pull request), runs different analysis and posts results to help software developers to easily review the code. Specifically Crabot performs the following tasks:</p>
+                            <ul style="list-style-type:none">
+                                <li>Evaluate and report test coverage of newly added code</li>
+                                <li>Report newly added code dependencies</li>
+                                <li>Extract documentation of new methods to help a reviewer better understand the new code changes</li>
+                                <li>Detect and report any duplicate code</li>
+                            </ul>
                             <ul class="list-inline item-details">
                                 <li>Date:
-                                    <strong>February 2016
+                                    <strong>October 2016
                                     </strong>
                                 </li>
                                 <li>Domain:
-                                    <strong>Computer Networks/Internet Protocols
+                                    <strong>Software Engineering
                                     </strong>
                                 </li>
                             </ul>
@@ -373,11 +381,25 @@
                         <div class="modal-body">
                             <h2>Peer-to-Peer Centralized Index(P2P-CI) for sharing RFCs</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <!--<img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">-->
                             <p>Built a P2P-CI system in which peers who wish to download an RFC that they do not have in their hard drive, may download it from another active peer who does. All communication among peers or between a peer and the server will be taking place over TCP. Implemented the system using Python.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
                                     <strong>April 2016
+                                    </strong>
+                                </li>
+                                <li>Domain:
+                                    <strong>Computer Networks/Internet Protocols
+                                    </strong>
+                                </li>
+                            </ul>
+                            <h2>A Simple FTP Server using UDP and Go-Back-N:</h2>
+                            <hr class="star-primary">
+                            <!--<img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">-->
+                            <p>Implemented a FTP server in Python but with using the UDP Protocol. The UDP communication with the server is made reliable with the implementation of Go-Back-N sliding window protocol.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong>February 2016
                                     </strong>
                                 </li>
                                 <li>Domain:
@@ -406,7 +428,7 @@
                         <div class="modal-body">
                             <h2>Investigation of Protocol Handshakes on Mobile Devices for Data Protection</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <!--<img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">-->
                             <p>Split apps into different classifications and analyze the protocol handshakes used for data in transit, specifically identifying the use of off-the-shelf encryption and data protection mechanisms on Android devices.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
@@ -439,7 +461,7 @@
                         <div class="modal-body">
                             <h2>Library Management System</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <!--<img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">-->
                             <p>Designed and developed a Library Management System for NCSU libraries as an academic project. Applied various DBMS concepts and used Oracle 11g and Java to develop it.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
@@ -472,7 +494,7 @@
                         <div class="modal-body">
                             <h2>Online Magazine Portal</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <!--<img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">-->
                             <p>Developed an online magazine portal through which students and teachers can stay in touch with recent technical trends. Used HTML, JavaScript and CSS for web development and also used Oracle 10g and JSP.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
